@@ -1,3 +1,8 @@
+# Forçar www na URL
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^otaviox\.com [NC]
+RewriteRule ^(.*)$ https://www.otaviox.com/$1 [L,R=301]
+
 <IfModule mod_expires.c>
   ExpiresActive Off
 </IfModule>

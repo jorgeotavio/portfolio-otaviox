@@ -1,44 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu portfólio - Jorge Otávio</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Olá, um programador web com experência em tecnologias como PHP, Javascript, Java e ReactJS"
+    />
+    <title>Jorge Otávio - Programador</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <style>
-        body {
-            margin: 0;
-            padding: 0 1rem;
-            text-align: center;
-            font-family: Arial, Helvetica, sans-serif;
-        }
+      :root {
+        --color-dark-blue: #000814;
+        --color-deep-blue: #001d3d;
+        --color-blue: #003566;
+        --color-white: #e4e4e4;
+      }
 
-        @media (max-width: 768px) {
-            br {
-                display: none;
-            }
-        }
+      body {
+        background-color: var(--color-dark-blue);
+      }
+
+      * {
+        font-family: "Lexend", sans-serif;
+        color: var(--color-white);
+      }
+
+      h1 {
+        font-size: 1.5rem;
+      }
+
+      p {
+        font-size: 0.875rem;
+        line-height: 150%;
+        font-weight: 300;
+      }
+
+      .main-container {
+        max-width: 500px;
+        width: 100%;
+        margin: 0 auto;
+      }
     </style>
-</head>
-<body>
-    <header>
-        <div>
-            <h1>
-                Olá, me chamo <br> Jorge Otávio
-            </h1>
-            <p>
-                Este é o meu portfólio, onde irei expor meus trabalhos <br> recentes 
-                e espero mostrar um pouco do meu contato com a tecnologia. 
-            </p>
-        </div>
+  </head>
+  <body>
+    <header class="main-container px-3">
+      <div class="my-6">
+        <img src="images/otavio-logo.svg" alt="">
+      </div>
+      <h1 class="my-6">Programador Full-Stack, criando sistemas webs!</h1>
+      <p class="my-6">
+        Sou natural do interior de Pernambuco e tenho 25 anos. Sou
+        desenvolvedor full-stack, com foco em front-end, especializado na
+        criação de interfaces intuitivas e acessíveis.
+      </p>
+
+      <p class="my-6">
+        Sou formado em Sistemas de Informação pela UFRPE, campus UAST, e
+        concluí minha graduação em 2024.
+      </p>
+
+      <p class="my-6">
+        Atualmente, trabalho na Neoperformance, uma empresa do Rio de Janeiro
+        que atua com dados e mídia de forma eficiente e de alta qualidade,
+        atendendo clientes em nível global.
+      </p>
     </header>
-    <section>
-        <article>
-            <h2>Minha trajetória</h2>
-            <p>
-                Comecei a programar com 15 anos de idade, <br>
-                em um curso técnico que fiz em conjunto com o ensino médio
-            </p>
-        </article>
-    </section>
-</body>
+  </body>
 </html>

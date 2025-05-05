@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
-    name="description"
-    content="Olá, um programador web com experência em tecnologias como PHP, Javascript, Java e ReactJS"
+      name="description"
+      content="Olá, um programador web com experência em tecnologias como PHP, Javascript, Java e ReactJS"
     />
     <title>Jorge Otávio - Programador</title>
     <link rel="canonical" href="https://www.otaviox.com/">
@@ -40,16 +40,6 @@
         color: var(--color-white);
       }
 
-      h1 {
-        font-size: 1.5rem;
-      }
-
-      p {
-        font-size: 0.875rem;
-        line-height: 150%;
-        font-weight: 300;
-      }
-
       .main-container {
         max-width: 500px;
         width: 100%;
@@ -62,19 +52,19 @@
       <div class="my-6">
         <img src="images/otavio-logo.svg" alt="">
       </div>
-      <h1 class="my-6">Programador Full-Stack, criando sistemas webs!</h1>
-      <p class="my-6">
-        Sou natural do interior de Pernambuco e tenho 25 anos. Sou
+      <h1 class="my-6 text-2xl">Programador Full-Stack, criando sistemas webs!</h1>
+      <p class="my-6 text-sm font-light">
+        Sou natural do interior de Pernambuco e tenho <span id="ageDisplay"></span> anos. Sou
         desenvolvedor full-stack, com foco em front-end, especializado na
         criação de interfaces intuitivas e acessíveis.
       </p>
 
-      <p class="my-6">
+      <p class="my-6 text-sm font-light">
         Sou formado em Sistemas de Informação pela UFRPE, campus UAST, e
         concluí minha graduação em 2024.
       </p>
 
-      <p class="my-6">
+      <p class="my-6 text-sm font-light">
         Atualmente, trabalho na Neoperformance, uma empresa do Rio de Janeiro
         que atua com dados e mídia de forma eficiente e de alta qualidade,
         atendendo clientes em nível global.
@@ -84,14 +74,14 @@
       <h3 class="mb-4 pt-5 border-t border-[#003566]">
         Formação
       </h3>
-      <ul class="bg-[#001D3D] border border-[#003566] rounded-lg py-3 px-4">
+      <ul class="bg-[#001D3D] border border-[#003566] rounded-lg px-4">
         <li class="flex items-center py-5">
           <div class="text-4xl me-4">
             <i class="ph ph-student"></i>
           </div>
           <div>
             <h4>Bel. Sistemas de Informação </h4>
-            <p>UFRPE - Bacharelado - Concluído</p>
+            <p class="font-light text-sm"><a href="https://ufrpe.br/" target="_blank" referrerpolicy="no-referrer">UFRPE</a> - Bacharelado - 2024</p>
           </div>
         </li>
       </ul>
@@ -100,14 +90,16 @@
       <h3 class="mb-4 pt-5">
         Projetos
       </h3>
-      <ul class="bg-[#001D3D] border border-[#003566] rounded-lg py-3 px-4">
+      <ul class="bg-[#001D3D] border border-[#003566] rounded-lg px-4">
         <li class="flex items-center py-5 border-b border-[#003566]">
           <div class="text-4xl me-4">
             <i class="ph ph-bus"></i>
           </div>
           <div>
-            <h4>Ônibus Uast</h4>
-            <p>Criado para listar e interagir os pontos de ônibus da UAST.</p>
+            <a href="https://onibus-uast.jorgeotavio.com/" target="_blank" referrerpolicy="no-referrer">
+              <h4>Ônibus Uast <i class="ph ph-arrow-square-out ms-1"></i></h4>
+            </a>
+            <p class="text-sm font-light">Criado para listar e interagir os pontos de ônibus da UAST.</p>
           </div>
         </li>
         <li class="flex items-center py-5 border-b border-[#003566]">
@@ -116,7 +108,7 @@
           </div>
           <div>
             <h4>RapidOs</h4>
-            <p>Sistema para gerenciar Ordens de Serviços.</p>
+            <p class="text-sm font-light">Sistema para gerenciar Ordens de Serviços.</p>
           </div>
         </li>
         <li class="flex items-center py-5 border-b border-[#003566]">
@@ -124,8 +116,10 @@
             <i class="ph ph-car"></i>
           </div>
           <div>
-            <h4>Rental App</h4>
-            <p>Aplicativo de rastreamento veicular, com comandos de ligar e desligar o veículo.</p>
+            <a href="https://rentalapp.certoauto.com/login" target="_blank" referrerpolicy="no-referrer">
+              <h4>Rental App <i class="ph ph-arrow-square-out ms-1"></i></h4>
+            </a>
+            <p class="text-sm font-light">Aplicativo de rastreamento veicular, com comandos de ligar e desligar o veículo.</p>
           </div>
         </li>
         <li class="flex items-center py-5">
@@ -133,8 +127,10 @@
             <i class="ph ph-student"></i>
           </div>
           <div>
-            <h4>Flash Learn</h4>
-            <p>Aplicativo de estudos, baseado na técnica de aprendizado com Flash Cards.</p>
+            <a href="https://learn.flashingdocs.com/" target="_blank" referrerpolicy="no-referrer">
+              <h4>Flash Learn <i class="ph ph-arrow-square-out ms-1"></i></h4>
+            </a>
+            <p class="text-sm font-light">Aplicativo de estudos, baseado na técnica de aprendizado com Flash Cards.</p>
           </div>
         </li>
       </ul>
@@ -143,32 +139,73 @@
       <h3 class="mb-4 pt-5">
         Social
       </h3>
-      <ul class="bg-[#001D3D] border border-[#003566] rounded-lg py-3 px-4">
-        <li class="flex items-center py-5 pt-4 border-b border-[#003566]">
-          <div class="text-3xl me-3">
-            <i class="ph ph-linkedin-logo"></i>
-          </div>
-          <div>
-            <h4>Linkedin</h4>
-          </div>
+      <ul class="bg-[#001D3D] border border-[#003566] rounded-lg px-4">
+        <li>
+          <a class="cursor-pointer flex items-center py-5 border-b border-[#003566]" href="https://www.linkedin.com/in/jorgeotavio/" referrerpolicy="no-referrer" target="_blank">
+            <div class="text-2xl me-3">
+              <i class="ph ph-linkedin-logo"></i>
+            </div>
+            <div>
+              <h4 class="text-sm">Linkedin</h4>
+            </div>
+            <div class="ms-auto">
+              <i class="ph ph-arrow-square-out"></i>
+            </div>
+          </a>
         </li>
-        <li class="flex items-center py-5 border-b border-[#003566]">
-          <div class="text-3xl me-3">
-            <i class="ph ph-github-logo"></i>
-          </div>
-          <div>
-            <h4>Github</h4>
-          </div>
+        <li>
+          <a class="cursor-pointer flex items-center py-5 border-b border-[#003566]" href="https://www.github.com/jorgeotavio/" referrerpolicy="no-referrer" target="_blank">
+            <div class="text-2xl me-3">
+              <i class="ph ph-github-logo"></i>
+            </div>
+            <div>
+              <h4 class="text-sm">Github</h4>
+            </div>
+            <div class="ms-auto">
+              <i class="ph ph-arrow-square-out"></i>
+            </div>
+          </a>
         </li>
-        <li class="flex items-center py-5 pb-4">
-          <div class="text-3xl me-3">
-            <i class="ph ph-mailbox"></i>
-          </div>
-          <div>
-            <h4>E-mail</h4>
-          </div>
+        <li>
+          <a class="cursor-pointer flex items-center py-5" href="https://www.instagram.com/jorgeotav/" referrerpolicy="no-referrer" target="_blank">
+            <div class="text-2xl me-3">
+              <i class="ph ph-instagram-logo"></i>
+            </div>
+            <div>
+              <h4 class="text-sm">Instagram</i></h4>
+            </div>
+            <div class="ms-auto">
+              <i class="ph ph-arrow-square-out"></i>
+            </div>
+          </a>
         </li>
       </ul>
     </section>
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        const birthDateStr = '2000-03-09';
+        const age = calculateAge(birthDateStr);
+        displayAge(age);
+      });
+  
+      function calculateAge(birthDateStr) {
+        const today = new Date();
+        const birthDate = new Date(birthDateStr);
+  
+        let age = today.getFullYear() - birthDate.getFullYear();
+        const hasHadBirthdayThisYear =
+          today.getMonth() > birthDate.getMonth() ||
+          (today.getMonth() === birthDate.getMonth() && today.getDate() >= birthDate.getDate());
+  
+        if (!hasHadBirthdayThisYear) age--;
+  
+        return age;
+      }
+  
+      function displayAge(age) {
+        const ageElement = document.getElementById('ageDisplay');
+        ageElement.textContent = age;
+      }
+    </script>
   </body>
 </html>

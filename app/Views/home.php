@@ -16,7 +16,7 @@
       href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap"
       rel="stylesheet"
     />
-    <link rel="icon" href="favicon.png">
+    <link rel="icon" href="<?php echo base_url('favicon.png'); ?>">
     <link
       rel="stylesheet"
       type="text/css"
